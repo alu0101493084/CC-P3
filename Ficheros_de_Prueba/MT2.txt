@@ -1,0 +1,50 @@
+# MT que obtiene una cadena de entrada formada por 'a' y 'b' y la transforma en la cinta
+# en una cadena de tantos 1 como 'b' habían seguidos de un blanco y tantos 1 como 'a' hubiesen.
+# Si se tiene un número nulo de 'b' se pondrá 0, en caso de tener un número de 'a' no se escribirá nada.
+q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 q10 q11 q12 q13 q14 q15 q16 q17
+a b
+a b y 1 0 .
+q0
+.
+q13
+q0 a q0 a R
+q0 b q1 y R
+q0 . q14 . R
+q1 y q1 y R
+q1 a q1 a R
+q1 b q1 b R
+q1 . q2 . R
+q2 1 q2 1 R
+q2 . q3 1 L
+q3 1 q3 1 L
+q3 . q4 . L
+q4 a q4 a L
+q4 y q4 y L
+q4 b q1 y R
+q4 . q5 . R
+q5 y q5 y R
+q5 a q6 y R
+q5 . q11 . L
+q6 y q6 y R
+q6 a q6 a R
+q6 . q7 . R
+q7 1 q7 1 R
+q7 0 q7 0 R
+q7 . q8 . R
+q8 1 q8 1 R
+q8 . q9 1 L
+q9 1 q9 1 L
+q9 . q10 . L
+q10 1 q10 1 L
+q10 0 q10 0 L
+q10 . q11 . L
+q11 y q11 y L
+q11 a q6 y R
+q11 . q12 . R
+q12 y q12 . R
+q12 . q13 . R
+q14 . q15 0 L
+q15 . q16 . L
+q16 a q6 y R
+q16 . q17 . R
+q17 . q13 . R
